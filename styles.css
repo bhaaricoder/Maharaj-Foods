@@ -98,7 +98,23 @@ button:hover {
 .google-signin-button:hover {
     background-color: #357ae8;
 }
-
+.login{
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 /* Google logo styling */
 .google-logo {
     width: 20px;
@@ -108,4 +124,72 @@ button:hover {
 .logo{
     width: 150px;
     height: auto;
+}
+
+
+/* Reset some default styles */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn .login-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.center-logo{
+   width: 200px;
+}
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+.left{
+    width : 242px;
+    height: 252px;
+    border-radius: 50%;
+    float: left;
+    
+}
+.right{
+    width : 242px;
+    height: 252px;
+    border-radius: 50%;
+    
 }
