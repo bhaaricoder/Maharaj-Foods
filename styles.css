@@ -180,16 +180,65 @@ header {
 }
 
 
-.left{
+.left-img{
     width : 242px;
     height: 252px;
     border-radius: 50%;
     float: left;
+    transition: tranform 0.5 ease;
+
     
 }
-.right{
+.right-img{
     width : 242px;
     height: 252px;
     border-radius: 50%;
+    float: right;
+    transition: tranform 0.5 ease;
+
     
+}
+
+.hover-img:hover{
+    transform: scale(1.1); 
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+.middle-text{
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        padding: 10px 50px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 30px; /* Adjust text size as needed */
+        color: #333; /* Text color */
+}
+
+.left-img-text{
+   
+    position: absolute;
+    bottom: 50px; /* Adjust as needed */
+    left: 252px;
+    transform: translateX(-50%);
+    font-size: 20px; /* Adjust as needed */
+    color: #000; /* Adjust as needed */
+    background-color: #f0f0f0; /* Light grey background color */
+    padding: 10px; /* Adds space around the text within the background */
+    border-radius: 3px;     
+}
+
+.right-img-text{
+    position: absolute;
+    bottom: 50px; /* Adjust as needed */
+    right: 90px;
+    transform: translateX(-50%);
+    font-size: 20px; /* Adjust as needed */
+    color: #000; /* Adjust as needed */
+    background-color: #f0f0f0; /* Light grey background color */
+    padding: 10px; /* Adds space around the text within the background */
+    border-radius: 3px;   
 }
