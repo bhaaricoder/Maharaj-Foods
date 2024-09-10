@@ -242,3 +242,13 @@ header {
     padding: 10px; /* Adds space around the text within the background */
     border-radius: 3px;   
 }
+
+
+
+
+/* Homepage2 styles */
+
+.homepage-2{
+    background: (to right, #ff7e5f, #feb47b);
+}
+
