@@ -1,5 +1,5 @@
  body{
-    background-color: rgb(197, 229, 197);
+    background-color:#2e2e2e;
   /*  background-image:
     url(bg_images/3.png),
     url(bg_images/4.png),
@@ -54,7 +54,7 @@ loginpage body {
     width: 400px;
     margin: 0 auto;
     margin-top: 120px;
-    background-color: burlywood;
+    background-color:#f9b050;
 
 }
 
