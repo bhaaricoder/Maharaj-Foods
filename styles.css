@@ -49,8 +49,8 @@ body{
     justify-content: flex-start; /* Aligns boxes to the start of the container */
     flex-wrap: nowrap; /* Prevents wrapping to the next line */
     padding: 20px;
-    margin-top: -150px;
-    margin-right: 10px;
+    margin-top: -220px;
+    margin-right: 230px;
 
     overflow-x: auto; /* Allows horizontal scrolling if boxes overflow the viewport */
 }
@@ -63,6 +63,9 @@ body{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-left: 0; /* Adds spacing between the boxes */
+    border: 4px solid #e0e0e0; /* Adds a light gray border */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
 
 .box img {
