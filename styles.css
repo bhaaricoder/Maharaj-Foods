@@ -48,8 +48,10 @@ body{
     flex-direction: row-reverse; /* Ensures boxes are arranged from right to left */
     justify-content: flex-start; /* Aligns boxes to the start of the container */
     flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    padding: 4px;
+    padding: 20px;
     margin-top: -150px;
+    margin-right: 10px;
+
     overflow-x: auto; /* Allows horizontal scrolling if boxes overflow the viewport */
 }
 
