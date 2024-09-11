@@ -1,9 +1,14 @@
-           /*  LOGO STYLING */
+ /* ====================================================== HOMEPAGE STYLING ==============================================*/         
+          
+          
+          
+          /*  LOGO STYLING */
 
 .head-logo{
     display: flex;       
     align-items: center;         
     justify-content: center;     
+    position: relative;
     padding: 10px;
 }
 
@@ -12,119 +17,65 @@
    height: auto;
    margin-right: 10px;
    transform: scale(1.0);
-   margin-top: -80px;
+   margin-top: -130px;
 }
 
 .head-logo h1{
     font-size: 24px;
     margin: 10px 0 0 0;
 }
-
-
-
-
-/* LOGIN PAGE STYLING  */
-
+.login-icon {
+    width:  70px; 
+    height: auto;
+    position: absolute;
+    left: 10px; 
+    top: 25%; 
+    transform: translateY(-50%);
+}
 body{
-    background-color: rgb(197, 229, 197);
+    background-color:#2e2e2e;
 }
 
-loginpage body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    
+.ser-logo{
+    margin-left: 33%;
+    margin-top: -15%;
 }
 
-loginpage body {
+/* SERVICES STYLING */
+
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    margin: 0%;
-    margin-left: 50;
-    
+    flex-direction: row-reverse; /* Ensures boxes are arranged from right to left */
+    justify-content: flex-start; /* Aligns boxes to the start of the container */
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    padding: 4px;
+    margin-top: -150px;
+    overflow-x: auto; /* Allows horizontal scrolling if boxes overflow the viewport */
 }
 
-.login-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 80px;
-    background-color: burlywood;
-
+.box {
+    width: 255px;
+    height: 472px;
+    overflow: hidden; /* Ensures images that overflow the box are hidden */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 0; /* Adds spacing between the boxes */
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-input {
-    width: 95%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
+.box img {
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire box */
+    display: block;
+    transition: opacity 0.3s ease;
 }
 
-.google-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: 1px solid #dfdfdf;
-    border-radius: 4px;
-    color: #333333;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-  .google-btn img {
-        width: 30px;
-        margin-right: 10px;
-  }
-  
-.google-btn:hover {
-    background-color: #f1f1f1;
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarges the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow size on hover */
 }
 
-button:hover {
-    opacity: 0.9;
-}
-
-.signup {
-    margin-top: 15px;
-}
-
-.signup a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.signup a:hover {
-    text-decoration: underline;
-}
-
-.login-logo{
-    width:200px;
-    margin-left: 90px;
+.box:hover img {
+    opacity: 0.8; /* Slightly dims the image on hover for effect */
 }
