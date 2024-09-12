@@ -40,9 +40,8 @@ body{
     height: auto; /* Maintains aspect ratio */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
-.login-icon img :hover {
-    transform: scale(1.1); /* Slightly enlarge the icon */
-    opacity: 0.8; /* Slightly fade the icon */
+.login-icon :hover {
+    color: red;
 }
 
 .ser-logo{
@@ -51,29 +50,31 @@ body{
 }
 
 /* SOCIAL MEDIA BUTTON STYLING */
-/* Make sure your social-icons container is positioned correctly */
-.social-icons {
-    position: fixed; /* Fixes the position relative to the viewport */
-    top: 40px; /* Adjust the vertical position as needed */
-    right: 100px; /* Moves the icons to the right side */
-    width: 60px; /* Sets the width of the container */
-    display: flex;
-    flex-direction: row; /* Aligns icons vertically */
-    gap: 10px; /* Space between icons */
+.media-icons {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 60px; /* Distance from the top */
+    right: 80px; /* Distance from the right */
+    display: flex; /* Align items in a row */
     z-index: 1000;
+    gap: 30px;
+    
 }
 
-.social-icons img {
-    width: 60px; /* Sets the width of each icon */
-    height: auto; /* Maintains aspect ratio */
+.media-icons a {
+    margin-left: -20px; /* Space between icons */
 }
-.social-icons img {
-    width: 60px;
+
+.media-icons img {
+    width: 50px; /* Adjust the size of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+.media-icons  {
+    width: 50px;
     height: auto;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
-.social-icons img:hover {
+.media-icons img:hover {
     transform: scale(1.1); /* Slightly enlarge the icon */
     opacity: 0.8; /* Slightly fade the icon */
 }
@@ -86,7 +87,7 @@ body{
     flex-direction: row-reverse; /* Ensures boxes are arranged from right to left */
     justify-content: flex-start; /* Aligns boxes to the start of the container */
     flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    padding: 20px;
+    padding : 50px;
     margin-top: -220px;
     margin-right: 230px;
 
@@ -96,12 +97,13 @@ body{
 .box {
     width: 255px;
     height: 472px;
-    overflow: hidden; /* Ensures images that overflow the box are hidden */
+   /* Ensures images that overflow the box are hidden */
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 0; /* Adds spacing between the boxes */
-    border: 4px solid #e0e0e0; /* Adds a light gray border */
+    margin-left: -30px; /* Adds spacing between the boxes */
+    margin-top: -20PX;
+    border: 10px solid #e0e0e0; /* Adds a light gray border */
     border-radius: 15px; /* Smooth rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
