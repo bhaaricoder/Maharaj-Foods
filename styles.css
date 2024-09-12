@@ -36,7 +36,7 @@ body{
     background-color:#2e2e2e;
 }
 .login-icon{
-    width: 150px; /* Sets the width of each icon */
+    width: 50px; /* Sets the width of each icon */
     height: auto; /* Maintains aspect ratio */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
@@ -96,7 +96,9 @@ body{
 
 .box {
     width: 255px;
+    min-width: 100px;
     height: 472px;
+    min-height: 100px;
    /* Ensures images that overflow the box are hidden */
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
