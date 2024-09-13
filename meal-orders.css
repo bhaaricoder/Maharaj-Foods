@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .meal-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .meal-package {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .meal-package h3 {
+    margin-bottom: 10px;
+  }
+  
+  .meal-package p {
+    margin: 5px 0;
+  }
+
+ body h1{
+       background-color: orange;
+       padding: 10px;
+ }
+
+.h2{
+    padding: 10px;
+    background-color: orange;
+ }
