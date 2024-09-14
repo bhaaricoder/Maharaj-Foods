@@ -39,7 +39,8 @@
     width: 300px; /* Default width for desktop */
     margin-left: auto; /* Auto centers */
     margin-right: auto; /* Auto centers */
-    margin-top: -150px; /* Adjusted top margin for desktop view */
+    margin-top: -150
+    +3+px; /* Adjusted top margin for desktop view */
     display: block;
 }
 
@@ -135,7 +136,7 @@
     justify-content: center; /* Center the container horizontally */
     flex-wrap: nowrap; /* Keep the boxes in one row */
     padding: 50px;
-    margin: -100px auto; /* Center the container horizontally on the page */
+    margin: -10px auto; /* Center the container horizontally on the page */
     width: fit-content; /* Container will shrink to fit its content */
     overflow-x: auto;
 }
