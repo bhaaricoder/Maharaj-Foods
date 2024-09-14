@@ -1,8 +1,6 @@
- /* ====================================================== HOMEPAGE STYLING ==============================================*/         
-          
-          
-          
-          /*  LOGO STYLING */
+/* ====================================================== HOMEPAGE STYLING ==============================================*/         
+
+/* LOGO STYLING */
 
 /* Default (desktop) styles */
 .head-logo {
@@ -14,16 +12,14 @@
 }
 
 .logo {
-   width: 350px;
-   height: auto;
-   margin-right: 10px;
-   transform: scale(1.0);
-   margin-top: -130px;
+    width: 300px; /* Adjusted width for desktop */
+    height: auto;
+    margin-right: 10px;
+    transform: scale(1.0);
 }
 
 .head-logo h1 {
     font-size: 24px;
-    margin: 10px 0 0 0;
 }
 
 .login-icon {
@@ -33,12 +29,39 @@
     left: 10px; 
     top: 25%; 
     transform: translateY(-50%);
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* SERVICES LOGO STYLING */
+
+/* Default (Desktop) styles */
 .ser-logo {
-    margin-left: 33%;
-    margin-top: -15%;
+    width: 300px; /* Default width for desktop */
+    margin-left: auto; /* Auto centers */
+    margin-right: auto; /* Auto centers */
+    margin-top: 10px; /* Adjusted top margin for desktop view */
+    display: block;
+}
+
+/* For screens 768px and smaller (tablet/mobile) */
+@media (max-width: 768px) {
+    .ser-logo {
+        width: 300px; /* Reduce size for tablets */
+        margin-left: auto; /* Auto margin for better centering */
+        margin-right: auto; /* Auto margin for better centering */
+        display: block; /* Ensure block-level element */
+        margin-top: px; /* Adjust top margin for better visibility */
+    }
+}
+
+/* For screens 480px and smaller (small mobile phones) */
+@media (max-width: 480px) {
+    .ser-logo {
+        width: 300px; /* Further reduce size for small devices */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+        margin-top: 20px; /* Adjust top margin */
+    }
 }
 
 /* SOCIAL MEDIA BUTTON STYLING */
@@ -87,16 +110,12 @@
     .login-icon {
         width: 40px; /* Smaller login icon */
         left: 5px; /* Adjust positioning */
-        top: 20%; /* Tweak position relative to the container */
-    }
-
-    .ser-logo {
-        margin-left: 0;
-        margin-top: -5%;
+        top: 50%; /* Tweak position relative to the container */
     }
 
     .media-icons {
         top: 20px; /* Adjust media icons' position */
+        margin-top: 20px;
         right: 20px; /* Bring media icons closer to the edge */
         gap: 15px; /* Reduce gap between icons */
     }
@@ -110,9 +129,6 @@
         opacity: 1; /* Keep opacity normal on hover */
     }
 }
-
-
-
 /* SERVICES STYLING */
 /* Desktop styles (default) */
 .container {
@@ -121,8 +137,9 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     padding: 50px;
-    margin-top: -220px;
-    margin-right: 230px;
+    margin-top: -100px; /* Removed large negative margin */
+    margin-right: auto;
+    margin-left: auto;
     overflow-x: auto;
 }
 
@@ -134,8 +151,9 @@
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: -30px;
-    margin-top: -20px;
+    margin-left: 20px; /* Adjusted margins */
+
+    margin-top: 10px;
     border: 10px solid #e0e0e0;
     border-radius: 15px;
 }
@@ -160,29 +178,42 @@
 /* Mobile styles */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stacks boxes vertically */
-        justify-content: center; /* Centers the boxes */
-        align-items: center; /* Align boxes in the center */
-        padding: 20px; /* Reduce padding for smaller screens */
-        margin: 0; /* Remove negative margins */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
     }
 
     .box {
         width: 90%; /* Make boxes take up 90% of the container width */
-        min-width: unset; /* Removes the min-width restriction */
-        height: auto; /* Let the height adjust automatically based on content */
-        margin-left: 0; /* Remove margin between boxes */
-        margin-top: 20px; /* Add space between boxes vertically */
-        border: 5px solid #e0e0e0; /* Adjust border thickness */
-        border-radius: 10px; /* Slightly smaller radius for mobile */
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        border: 5px solid #e0e0e0;
+        border-radius: 10px;
     }
 
     .box img {
-        height: auto; /* Image height should be adaptive on mobile */
+        height: auto;
     }
 
     .box:hover {
         transform: none; 
         box-shadow: none;
     } 
+}
+
+/*  AI MADE CHANGES */
+@media (max-width: 768px) {
+    .logo {
+        width: 200px;
+        margin-top: 0px;
+    }
+
+    /* Adjust media-icons for mobile if keeping in header */
+    .media-icons {
+        right: 20px;
+        top: 10px;
+    }
 }
