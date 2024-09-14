@@ -1,4 +1,4 @@
-/* ====================================================== HOMEPAGE STYLING ==============================================*/         
+/*===================================== HOMEPAGE STYLING ==============================================*/         
 
 /* LOGO STYLING */
 
@@ -27,7 +27,7 @@
     height: auto;
     position: absolute;
     left: 10px; 
-    top: 25%; 
+    top: 50%; 
     transform: translateY(-50%);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -39,7 +39,7 @@
     width: 300px; /* Default width for desktop */
     margin-left: auto; /* Auto centers */
     margin-right: auto; /* Auto centers */
-    margin-top: 10px; /* Adjusted top margin for desktop view */
+    margin-top: -150px; /* Adjusted top margin for desktop view */
     display: block;
 }
 
@@ -67,7 +67,7 @@
 /* SOCIAL MEDIA BUTTON STYLING */
 .media-icons {
     position: absolute;
-    top: 60px;
+    top: 20px;
     right: 80px;
     display: flex;
     z-index: 1000;
@@ -130,16 +130,13 @@
     }
 }
 /* SERVICES STYLING */
-/* Desktop styles (default) */
 .container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: center; /* Center the container horizontally */
+    flex-wrap: nowrap; /* Keep the boxes in one row */
     padding: 50px;
-    margin-top: -100px; /* Removed large negative margin */
-    margin-right: auto;
-    margin-left: auto;
+    margin: -100px auto; /* Center the container horizontally on the page */
+    width: fit-content; /* Container will shrink to fit its content */
     overflow-x: auto;
 }
 
@@ -147,13 +144,10 @@
     width: 255px;
     min-width: 100px;
     height: 472px;
-    min-height: 100px;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 20px; /* Adjusted margins */
-
-    margin-top: 10px;
+    margin: -20px 30px; /* Maintain negative top margin and horizontal spacing */
     border: 10px solid #e0e0e0;
     border-radius: 15px;
 }
@@ -165,7 +159,6 @@
     display: block;
     transition: opacity 0.3s ease;
 }
-
 .box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -182,7 +175,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
-        
+        margin-right: 40px;
     }
 
     .box {
@@ -215,5 +208,24 @@
     .media-icons {
         right: 20px;
         top: 10px;
+    }
+}
+
+body{
+    background-color: #2e2e2e;
+}
+
+/* LINE STYLE */
+
+.orange-line {
+    border-top: 2px solid orange; /* Adjust thickness as needed */
+    width: 100%; /* Full width on all screens */
+    margin: 20px 0; /* Add spacing above and below */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) { /* Example breakpoint */
+    .orange-line {
+        margin: 10px 0; /* Reduce spacing on smaller screens */
     }
 }
