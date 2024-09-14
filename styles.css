@@ -81,17 +81,16 @@ body{
 
 
 /* SERVICES STYLING */
-
+/* Desktop styles (default) */
 .container {
     display: flex;
-    flex-direction: row-reverse; /* Ensures boxes are arranged from right to left */
-    justify-content: flex-start; /* Aligns boxes to the start of the container */
-    flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    padding : 50px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 50px;
     margin-top: -220px;
     margin-right: 230px;
-
-    overflow-x: auto; /* Allows horizontal scrolling if boxes overflow the viewport */
+    overflow-x: auto;
 }
 
 .box {
@@ -99,30 +98,58 @@ body{
     min-width: 100px;
     height: 472px;
     min-height: 100px;
-   /* Ensures images that overflow the box are hidden */
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: -30px; /* Adds spacing between the boxes */
-    margin-top: -20PX;
-    border: 10px solid #e0e0e0; /* Adds a light gray border */
-    border-radius: 15px; /* Smooth rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    margin-left: -30px;
+    margin-top: -20px;
+    border: 10px solid #e0e0e0;
+    border-radius: 15px;
 }
 
 .box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire box */
+    object-fit: cover;
     display: block;
     transition: opacity 0.3s ease;
 }
 
 .box:hover {
-    transform: scale(1.05); /* Slightly enlarges the box on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow size on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .box:hover img {
-    opacity: 0.8; /* Slightly dims the image on hover for effect */
+    opacity: 0.8;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks boxes vertically */
+        justify-content: center; /* Centers the boxes */
+        align-items: center; /* Align boxes in the center */
+        padding: 20px; /* Reduce padding for smaller screens */
+        margin: 0; /* Remove negative margins */
+    }
+
+    .box {
+        width: 90%; /* Make boxes take up 90% of the container width */
+        min-width: unset; /* Removes the min-width restriction */
+        height: auto; /* Let the height adjust automatically based on content */
+        margin-left: 0; /* Remove margin between boxes */
+        margin-top: 20px; /* Add space between boxes vertically */
+        border: 5px solid #e0e0e0; /* Adjust border thickness */
+        border-radius: 10px; /* Slightly smaller radius for mobile */
+    }
+
+    .box img {
+        height: auto; /* Image height should be adaptive on mobile */
+    }
+
+    .box:hover {
+        transform: none; 
+        box-shadow: none;
+    } 
 }
