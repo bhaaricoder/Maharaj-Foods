@@ -4,7 +4,8 @@
           
           /*  LOGO STYLING */
 
-.head-logo{
+/* Default (desktop) styles */
+.head-logo {
     display: flex;       
     align-items: center;         
     justify-content: center;     
@@ -12,7 +13,7 @@
     padding: 10px;
 }
 
-.logo{
+.logo {
    width: 350px;
    height: auto;
    margin-right: 10px;
@@ -20,64 +21,96 @@
    margin-top: -130px;
 }
 
-.head-logo h1{
+.head-logo h1 {
     font-size: 24px;
     margin: 10px 0 0 0;
 }
+
 .login-icon {
-    width:  150px; 
+    width: 50px; 
     height: auto;
     position: absolute;
     left: 10px; 
     top: 25%; 
     transform: translateY(-50%);
-}
-body{
-    background-color:#2e2e2e;
-}
-.login-icon{
-    width: 50px; /* Sets the width of each icon */
-    height: auto; /* Maintains aspect ratio */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
-.login-icon :hover {
-    color: red;
-}
 
-.ser-logo{
+.ser-logo {
     margin-left: 33%;
     margin-top: -15%;
 }
 
 /* SOCIAL MEDIA BUTTON STYLING */
 .media-icons {
-    position: absolute; /* Position relative to the nearest positioned ancestor */
-    top: 60px; /* Distance from the top */
-    right: 80px; /* Distance from the right */
-    display: flex; /* Align items in a row */
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    display: flex;
     z-index: 1000;
     gap: 30px;
-    
 }
 
 .media-icons a {
-    margin-left: -20px; /* Space between icons */
+    margin-left: -20px;
 }
 
 .media-icons img {
-    width: 50px; /* Adjust the size of the icons */
-    height: auto; /* Maintain aspect ratio */
-}
-.media-icons  {
     width: 50px;
     height: auto;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .media-icons img:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon */
-    opacity: 0.8; /* Slightly fade the icon */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .head-logo {
+        flex-direction: column; /* Stack logo and heading vertically */
+        padding: 20px;
+    }
+
+    .logo {
+        width: 200px; /* Reduce logo size for smaller screens */
+        margin-right: 0; /* Remove right margin */
+        margin-top: -50px; /* Adjust top margin */
+    }
+
+    .head-logo h1 {
+        font-size: 20px; /* Reduce heading font size */
+        margin: 10px 0 0 0;
+    }
+
+    .login-icon {
+        width: 40px; /* Smaller login icon */
+        left: 5px; /* Adjust positioning */
+        top: 20%; /* Tweak position relative to the container */
+    }
+
+    .ser-logo {
+        margin-left: 0;
+        margin-top: -5%;
+    }
+
+    .media-icons {
+        top: 20px; /* Adjust media icons' position */
+        right: 20px; /* Bring media icons closer to the edge */
+        gap: 15px; /* Reduce gap between icons */
+    }
+
+    .media-icons img {
+        width: 30px; /* Smaller social media icons */
+    }
+
+    .media-icons img:hover {
+        transform: none; /* Disable hover effects on mobile */
+        opacity: 1; /* Keep opacity normal on hover */
+    }
+}
+
 
 
 /* SERVICES STYLING */
