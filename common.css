@@ -1,0 +1,15 @@
+body{
+    background-color: #2e2e2e;
+    .orange-line {
+        border-top: 2px solid orange; /* Adjust thickness as needed */
+        width: 100%; /* Full width on all screens */
+        margin: 20px 0; /* Add spacing above and below */
+    }
+    
+    /* Optional: Adjust for smaller screens */
+    @media (max-width: 768px) { /* Example breakpoint */
+        .orange-line {
+            margin: 10px 0; /* Reduce spacing on smaller screens */
+        }
+    }
+}    

@@ -1,43 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Orders</title>
     <link href="meal-orders.css" rel="stylesheet">
-    <title>Meal orders</title>
+    <link href="common.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1 style="text-align: center;"> Meal orders </h1>
-    <h2 style="text-align: center;"><span class="h2">Operating Areas</span> </h2>
-<div class="grid-container">
-  <div class="grid-item">Area 1</div>
-  <div class="grid-item">Area 2</div>
-  <div class="grid-item">Area 3</div>
-</div>
-  
-<h2>Meal Packages</h2>
-<div class="meal-packages-grid">
-  <div class="meal-package">
-    <h3>Package 1</h3>
-    <p>Includes: 3 meals/day</p>
-    <p>Weekly Price: ₹500</p>
-    <p>Monthly Price: ₹1800</p>
-    <p>Single Order: ₹200</p>
-    <button>Order Now</button>
-  </div>
-
-  <div class="meal-package">
-    <h3>Package 2</h3>
-    <p>Includes: 2 meals/day</p>
-    <p>Weekly Price: ₹400</p>
-    <p>Monthly Price: ₹1500</p>
-    <p>Single Order: ₹150</p>
-    <button>Order Now</button>
-  </div>
-  <!-- Add more packages as needed -->
-</div>
-  
-
-    
+    <div class="container">
+        <h1 style="color: #ffa857;">Meal Orders</h1>
+        <div class="orange-line"></div>
+        <div class="meal-grid">
+            <div class="meal-card">
+                <img src="meal-orders images/6.png" alt="Vegetarian Delight" class="meal-image" style="padding-top: -5px;">
+                <div class="meal-info">
+                    <h2 class="meal-title" style="text-align: center;">Riceplate</h2>
+                    <p>3 chapat + Salad + 1 Rice bowl + 2 Sabji</p>
+                    <div class="meal-price">
+                        <div class="price-option">
+                            <span>Weekly</span>
+                            <p class="price">500₹</p>
+                            <a style="text-align: left" class="link">Learn more</a>
+                        </div>
+                        <div class="price-option">
+                            <span>Monthly</span>
+                            <p class="price">2500₹</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="meal-card">
+                <img src="meal-orders images/EGG THALI.png" alt="Protein Powerhouse" class="meal-image" style="padding-top: 5px;">
+                <div class="meal-info">
+                    <h2 class="meal-title">Egg Thali</h2>
+                    <p>2 EGG curry + 1 bowl Rice + Salad + 3 chapati</p>
+                    <div class="meal-price">
+                        <div class="price-option">
+                            <span>Weekly</span>
+                            <p class="price">850₹</p>
+                            <a style="text-align: left" class="link">Learn more</a>
+                        </div>
+                        <div class="price-option">
+                            <span>Monthly</span>
+                            <p class="price">3600</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="meal-card">
+                <img src="meal-orders images/chicken thali.png"     alt="Keto Friendly" class="meal-image" style="padding-top: 10px;">
+                <div class="meal-info">
+                    <h2 class="meal-title">Chicken Thali</h2>
+                    <p>6 piece chicken + Salad + Rice + 3 Chapati</p>
+                    <div class="meal-price">
+                        <div class="price-option">
+                            <span>Weekly</span>
+                            <p class="price">1050₹</p>
+                            <a style="text-align: left" class="link">Learn more</a>
+                        </div>
+                        <div class="price-option">
+                            <span>Monthly</span>
+                            <p class="price">4500₹</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="meal-card">
+                <img src="meal-orders images/macchi thali.png" alt="Global Cuisine" class="meal-image" style="padding-top: 20px;">
+                <div class="meal-info">
+                    <h2 class="meal-title">Macchi thali </h2>
+                    <p> macchi + Salad + Rice + 3 Chapati</p>
+                    <div class="meal-price">
+                        <div class="price-option">
+                            <span>Weekly</span>
+                            <p class="price">1050₹</p>
+                            <a style="text-align: left" class="link">Learn more</a>
+                        </div>
+                        <div class="price-option">
+                            <span>Monthly</span>
+                            <p class="price">4500₹</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
