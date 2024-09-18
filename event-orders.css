@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+}
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+.cart-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cart-button:hover {
+    background-color: #059669;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+.plans {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.plan-box {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+.plan-box:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #ffedd5; /* Light orange background on hover */
+    transform: translateY(-5px);
+}
+.plan-box h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.plan-box p {
+    margin-bottom: 0.5rem;
+}
+.plan-box .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.select-button {
+    background-color: #f97316; /* Orange button */
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.select-button:hover {
+    background-color: #ea580c; /* Darker orange on hover */
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.menu-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+.menu-item:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+}
+.menu-item:nth-child(4n+1):hover {
+    background-color: #fee2e2; /* Light red */
+}
+.menu-item:nth-child(4n+2):hover {
+    background-color: #e0f2fe; /* Light blue */
+}
+.menu-item:nth-child(4n+3):hover {
+    background-color: #ecfccb; /* Light green */
+}
+.menu-item:nth-child(4n+4):hover {
+    background-color: #fae8ff; /* Light purple */
+}
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu-item-content {
+    padding: 1rem;
+}
+.menu-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.menu-item p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+.menu-item-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.add-button:hover {
+    background-color: #059669;
+}
+.learn-more {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.learn-more:hover {
+    color: #2563eb;
+}
